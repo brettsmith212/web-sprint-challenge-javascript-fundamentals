@@ -195,8 +195,10 @@ function greeting(fname, lname) {
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(/*Your Code Here */) {
-  /*Your Code Here */
+function CuboidMaker(obj) {
+  this.length = obj.length;
+  this.width = obj.width;
+  this.height = obj.height;
 }
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
