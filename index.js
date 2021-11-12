@@ -32,9 +32,16 @@ For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you ma
 
 function summation(num) {
   let arr = [num];
-  const sum = arr.map((num) => (num * (num + 1)) / 2);
-  return sum[0];
+
+  const sumTotal = function () {
+    const sum = arr.map((num) => (num * (num + 1)) / 2);
+    return sum[0];
+  };
+
+  return sumTotal();
 }
+
+console.log("summation: ", summation(4));
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
